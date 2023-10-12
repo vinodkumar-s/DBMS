@@ -2,18 +2,16 @@
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
-
+# THEORY
 ## DML(Data Manipulation Language)
-<div align="justify">
-The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
-</div>
+*  The SQL commands that deal with the manipulation of data present in the database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
+*  It is the component of the SQL statement that controls access to data and to the database. Basically, DCL statements are grouped with DML statements.
 
 ## List of DML commands: 
-<div align="justify">
-INSERT: It is used to insert data into a table.<br>
-UPDATE: It is used to update existing data within a table.<br>
-DELETE: It is used to delete records from a database table.<br>
-</div>
+1. INSERT: It is used to insert data into a table.
+2. UPDATE: It is used to update existing data within a table.
+3. DELETE: It is used to delete records from a database table.
+4. SELECT: The SELECT command shows the records of the specified table.
 
 ## Create the table as given below:
 ```sql
@@ -143,3 +141,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### OUTPUT:
+
+
+## RESULT :
+Thus the basic DML commands are executed.
