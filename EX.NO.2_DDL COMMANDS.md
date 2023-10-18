@@ -27,7 +27,7 @@ To create a student database and execute DDL queries using SQL.
 
 ### OUTPUT:
 
-### 2) Create a table student with the following fieds RegisterNumber,Name,Age,Address,Phone number
+### 2) Create a table student  and insert any two rows with the following fieds RegisterNumber,Name,Age,Address,Phone number
 
 ### SQL QUERY: 
 
@@ -40,8 +40,21 @@ To create a student database and execute DDL queries using SQL.
 
 ### OUTPUT:
 
+### 4) Rename the student table to mystudent
 
-### 4) Drop the student table
+### SQL QUERY: 
+
+
+
+### OUTPUT:
+
+### 5) Delete the mystudent rows using truncate keyword
+
+### SQL QUERY: 
+
+
+### OUTPUT:
+### 4) Drop the mystudent table
  
 ### SQL QUERY: 
 
@@ -49,22 +62,10 @@ To create a student database and execute DDL queries using SQL.
 ### OUTPUT:
 
 
-### 5) Delete the student table using truncate keyword
-
-### SQL QUERY: 
-
-
-### OUTPUT:
 
 
 
-### 6) Rename the student table to mystudent
 
-### SQL QUERY: 
-
-
-
-### OUTPUT:
 
 
 ## Result:
