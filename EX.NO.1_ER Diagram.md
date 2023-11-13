@@ -1,9 +1,12 @@
-# EXP NO 1: ER DIAGRAM CREATION, RELATIONAL MODEL AND SCHEMA GENERATION  
-### DATE
+# EXP NO 1: ER DIAGRAM CREATION, RELATIONAL MODEL AND SCHEMA GENERATION 
+
+### DATE : 
+
 ## AIM:
 <div align="justify">
    To create a ER Diagram for Bank management system or College management system using ERD Plus tool and generate the relational model with schema. 
 </div>
+
 
 ## Algorithm
 1. Create a login with https://erdplus.com.
@@ -12,71 +15,61 @@
 4. Create a weak entity, relation and attributes.
 5. Specify attributes unique, multivalued and composite attributes.
 
+
+
 ### ER Diagram 
-![image](https://github.com/Reebak04/DBMS/assets/118364993/4a2a5bb0-6fb6-4e20-a56a-c26245b1ccf8)
+
+![Bank_ER](https://github.com/AnnBlessy/DBMS/assets/119477835/8133347a-e969-4410-8fe7-38bb225ff6c7)
 
 
 ### Relational model
-![image](https://github.com/Reebak04/DBMS/assets/118364993/84b74116-ddbf-4a06-bc4b-9e9fba7c81dc)
+
+![image](https://github.com/AnnBlessy/DBMS/assets/119477835/c109e44e-a08e-434e-a24d-7cd99020f294)
 
 
 ### SQL DDL Schema 
-```
-CREATE TABLE DOCTOR
+```sql
+CREATE TABLE BANK
 (
-  DOC-ID INT NOT NULL,
-  QUALIFICATION INT NOT NULL,
-  SALARY INT NOT NULL,
-  PRIMARY KEY (DOC-ID)
+  Code INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Code)
 );
 
-CREATE TABLE MED_RECORD
+CREATE TABLE BANK_BRANCH
 (
-  PROBLEM INT NOT NULL,
-  DATE_OF_EXAMINATION INT NOT NULL,
-  REC-ID INT NOT NULL,
-  PRIMARY KEY (REC-ID)
+  Branch_no INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Branch_no)
 );
 
-CREATE TABLE DOCTOR_DNAME
+CREATE TABLE LOAN
 (
-  DNAME INT NOT NULL,
-  DOC-ID INT NOT NULL,
-  PRIMARY KEY (DNAME, DOC-ID),
-  FOREIGN KEY (DOC-ID) REFERENCES DOCTOR(DOC-ID)
+  Loan_no INT NOT NULL,
+  Amount INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Loan_no)
 );
 
-CREATE TABLE PATIENT
+CREATE TABLE CUSTOMER
 (
-  PAT-ID INT NOT NULL,
-  PDIAGNOSIS INT NOT NULL,
-  PADDRESS INT NOT NULL,
-  REC-ID INT NOT NULL,
-  PRIMARY KEY (PAT-ID),
-  FOREIGN KEY (REC-ID) REFERENCES MED_RECORD(REC-ID)
+  Phone INT NOT NULL,
+  Ssn INT NOT NULL,
+  Name INT NOT NULL,
+  Addr INT NOT NULL,
+  PRIMARY KEY (Ssn)
 );
 
-CREATE TABLE PATIENT_PNAME
+CREATE TABLE ACCOUNT
 (
-  PNAME INT NOT NULL,
-  PAT-ID INT NOT NULL,
-  PRIMARY KEY (PNAME, PAT-ID),
-  FOREIGN KEY (PAT-ID) REFERENCES PATIENT(PAT-ID)
-);
-
-CREATE TABLE HOSPITAL
-(
-  HOSP-ID INT NOT NULL,
-  HOS-NAME INT NOT NULL,
-  HADDRESS INT NOT NULL,
-  HCITY INT NOT NULL,
-  PAT-ID INT NOT NULL,
-  DOC-ID INT NOT NULL,
-  PRIMARY KEY (HOSP-ID),
-  FOREIGN KEY (PAT-ID) REFERENCES PATIENT(PAT-ID),
-  FOREIGN KEY (DOC-ID) REFERENCES DOCTOR(DOC-ID)
+  Acct_no INT NOT NULL,
+  Balance INT NOT NULL,
+  Type INT NOT NULL,
+  PRIMARY KEY (Acct_no)
 );
 ```
+
 ## RESULT 
 <div align="justify">
 Thus the ER diagram was drawn and relational diagram, SQL DDL staements are generated using ERD plus tool.
