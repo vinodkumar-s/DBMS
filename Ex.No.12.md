@@ -1,4 +1,4 @@
-# EX.NO.12: Simulating Clustering, Classification using WEKA Data mining and Analysis Tool
+# EX.NO.12: Simulating Classification using WEKA Data mining and Analysis Tool
 ## Date: 
 ## AIM:
 To perform a classification technique using WEKA tool
@@ -35,27 +35,12 @@ Classification in data mining is a common technique that separates data points i
 9. Selecting Visualize classifier errors would plot the results of classification as shown here −<br>
     ![image](https://github.com/dineshgl/EX-9-Simulating-Classification-using-WEKA-Tool/assets/143793356/9d39bad9-a77c-4c72-a9bb-0031154ef0c4)
 10. A cross represents a correctly classified instance while squares represents incorrectly classified instances. At the lower left corner of the plot you see a cross that indicates if outlook is sunny then play the game. So this is a correctly classified instance.<br>
-
-## CLUSTERING:
-<div align="justify">
-Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset. It can be defined as "A way of grouping the data points into different clusters, consisting of similar data points. The objects with the possible similarities remain in a group that has less or no similarities with another group." It does it by finding some similar patterns in the unlabelled dataset such as shape, size, color, behavior, etc., and divides them as per the presence and absence of those similar patterns. It is an unsupervised learning method, hence no supervision is provided to the algorithm, and it deals with the unlabeled dataset.
-
-## PROCEDURE:
-1. In the WEKA explorer select the Preprocess tab. Click on the Open file ... option and select the iris.arff file in the file selection dialog. <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/bd6df0b2-51db-4cee-a6f7-33152b2aac12)
-2. Click on the Cluster TAB to apply the clustering algorithms to our loaded data. Click on the Choose button. Now, select EM as the clustering algorithm. <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/34796748-9934-4cf0-9ce9-9b8204adb904)
-3. In the Cluster mode sub window, select the Classes to clusters evaluation option <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/658892f7-e190-4264-a5ae-175bb6e64a2b)
-4. Click on the Start button to process the data. After a while, the results will be presented on the screen. <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/a9b44cbc-15db-4821-8dc7-7a22cd5999a4)
-5. From the output screen, you can observe that − There are 5 clustered instances detected in the database. The **Cluster 0 represents setosa**, **Cluster 1 represents virginica**, **Cluster 2 represents versicolor**, while the last two clusters do not have any class associated with them. <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/5e2ee384-d8fc-45c3-ac20-fb716fd8cf5b)
-6. To visualize the clusters, right click on the EM result in the Result list. <br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/4078b056-ad78-4f6d-b86c-a1dc8e8b9f9e)
-7. Select Visualize cluster assignments.<br>
-![image](https://github.com/dineshgl/EX-10-Simulating-Clustering-using-WEKA-Data-mining-and-Analysis-Tool/assets/143793356/b28a21b1-4965-412f-8ac2-b8cdc079b703)
-
+## OUTPUT:
+![image](https://github.com/TejaswiniGugananthan/DBMS/assets/121222763/391098ff-abae-45ed-aa9a-2cc4ab480b6b)
+![image](https://github.com/TejaswiniGugananthan/DBMS/assets/121222763/0ecb59e7-b81f-4389-9bde-8a6e1f492ba5)
+![image](https://github.com/TejaswiniGugananthan/DBMS/assets/121222763/9ee0c88e-cd39-4fb2-812c-34e79b328cea)
+![image](https://github.com/TejaswiniGugananthan/DBMS/assets/121222763/b5d1bcd2-3008-48c4-b28f-4cf411f3ff58)
+![image](https://github.com/TejaswiniGugananthan/DBMS/assets/121222763/595eb72c-08ed-47a8-8b6a-ffd52caf3c4c)
 
 ## RESULT:
-Thus the simulation of clustering, classification technique has been executed using WEKA tool successfully.
+Thus the simulation of classification technique has been executed using WEKA tool successfully.
